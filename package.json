@@ -1,0 +1,44 @@
+{
+  "name": "@ddembo/repro-hydration-issue",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.12.0",
+    "npm": ">=7"
+  },
+  "browserslist": "Node >= 20.12, > 0.5%, not OperaMini all, not dead",
+  "dependencies": {
+    "@emotion/cache": "^11.13.0",
+    "@emotion/react": "^11.13.0",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^5.16.4",
+    "@mui/material-nextjs": "^5.16.4",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.14.11",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "find-unused-exports": "^6.0.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.2"
+  },
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "serve": "next start",
+    "prettier": "prettier -c .",
+    "eslint": "eslint .",
+    "type-check": "tsc",
+    "find-unused-exports": "find-unused-exports",
+    "check": "npm run prettier && npm run eslint && npm run type-check && find-unused-exports"
+  }
+}
